@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <style>
+    /* Body styling for light mode */
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+      background-color: #f0f0f0; /* Light background */
+      color: #333; /* Dark text color */
+    }
+
+    /* Container styling */
+    #weather-container {
+      background: #ffffff; /* White background */
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: 0 auto;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+    }
+
+    /* Input and button styling */
+    input, button {
+      padding: 10px;
+      margin: 5px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    /* Input specific style */
+    input {
+      background-color: #eaeaea; /* Light grey background */
+      color: #333; /* Dark text color */
+      width: calc(100% - 24px);
+    }
+
+    /* Button specific styles */
+    button {
+      background-color: #4caf50; /* Green button */
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    /* Button hover effect */
+    button:hover {
+      background-color: #45a049; /* Darker green on hover */
+    }
+
+    /* Attribution styling */
+    #attribution {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      font-size: 12px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>Weather App</h1>
+  
+  <div id="weather-container">
+    <h3>Enter a location:</h3>
+    <input type="text" id="locationInput" placeholder="Enter city">
+    <button id="getWeatherBtn">Get Weather</button>
+    <p>OR</p>
+    <button id="getCurrentLocationBtn">Use My Location</button>
+
+    <h2 id="locationName"></h2>
+    <p id="weatherDescription"></p>
+    <p id="temperature"></p>
+    <p id="humidity"></p>
+    <p id="windSpeed"></p>
+  </div>
+
+  <div id="attribution">
+    &copy; by Domie Sira
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
